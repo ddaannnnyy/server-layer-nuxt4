@@ -18,13 +18,15 @@ Using a Nuxt Layer is simple, you can read the full documentation [here](https:/
 
 The short answer to get started is to simply extend this repo via Github. In your projects `nuxt.config.ts` simply add:
 
-```
--> nuxt.config.ts
-...
-extends: [
-    ['github:ddaannnnyy/server-layer-nuxt4', { install: true}]
-]
-...
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  //
+  extends: [
+    ['github:ddaannnnyy/server-layer-nuxt4', { install: true }]
+  ]
+  //
+})
 ```
 
 The `install: true` flag means that the layer will install it's dependencies when mounted, however because you will have to import zod in validator files via import you will have to import it manually.
