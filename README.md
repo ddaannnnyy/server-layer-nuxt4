@@ -27,7 +27,17 @@ extends: [
 ...
 ```
 
-The `install: true` flag means that the layer will install it's dependencies when mounted.
+The `install: true` flag means that the layer will install it's dependencies when mounted, however because you will have to import zod in validator files via import you will have to import it manually.
+
+```bash
+npm i zod
+# or
+pnpm install zod
+# or
+yarn add zod
+# or
+bun add zod
+```
 
 The only dependency currently is [zod 4](https://zod.dev)
 
