@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/ddaannnnyy/server-layer-nuxt4/compare/v1.0.1...v1.0.2)
+
+### 📖 Documentation
+
+- 📝  Updated package.json for scoped package deployment, updated changelog initial version, updated .gitignore for .npmrc ([f942fe5](https://github.com/ddaannnnyy/server-layer-nuxt4/commit/f942fe5))
+
+### ❤️ Contributors
+
+- Ddaannnnyy <hello@danhebdon.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/ddaannnnyy/server-layer-nuxt4/compare/v0.0.1...v1.0.1)
