@@ -22,7 +22,7 @@ The short answer to get started is to simply extend this repo via Github. In you
 -> nuxt.config.ts
 ...
 extends: [
-    ['github:ddaannnnyy/layer--server', { install: true}]
+    ['github:ddaannnnyy/server-layer-nuxt4', { install: true}]
 ]
 ...
 ```
