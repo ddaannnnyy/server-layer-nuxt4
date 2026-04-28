@@ -1,7 +1,7 @@
-import type { H3Event } from '#imports'
-import { cacheHandler } from '#server/utils/cacheHandler'
-import { getAuthorizationHeaders } from '#server/utils/getAuthorizationHeader'
+import type { H3Event } from 'h3'
 import { devOnlyGuard } from '../../guards/envGuards'
+import { cacheHandler } from '../../utils/cacheHandler'
+import { getAuthorizationHeaders } from '../../utils/getAuthorizationHeader'
 
 const fetchFromCache = cacheHandler(async (event) => {
   return await getMe(event)
