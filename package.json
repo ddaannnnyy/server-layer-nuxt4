@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "release": "npm run prepack && changelogen --release && npm publish && git push --follow-tags"
+    "release:latest": "npx changelogen@latest --release && npm publish && git push --follow-tags",
+    "release:bump": "npx changelogen@latest --bump && npm publish && git push --follow-tags"
   },
   "peerDependencies": {
     "zod": "^4.3.6"
@@ -23,5 +24,6 @@
     "@antfu/eslint-config": "^8.2.0",
     "eslint": "^10.2.0",
     "eslint-plugin-format": "^2.0.1"
-  }
+  },
+  "version": "0.0.1"
 }
