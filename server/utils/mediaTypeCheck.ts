@@ -1,9 +1,6 @@
 export type AllowedMediaType = `${string}/${string}` | `${string}/*`
 
-export function mediaTypeCheck(debugString: string, allowed: AllowedMediaType[]) {
-  const file = {
-    type: debugString,
-  }
+export function mediaTypeCheck(file: File, allowed: AllowedMediaType[]) {
   if (!file.type) {
     throw createError({
       status: 400,
