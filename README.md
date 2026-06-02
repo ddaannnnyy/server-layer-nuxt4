@@ -283,14 +283,6 @@ const ignore = returnCacheIgnore(event)
 console.log(ignore)
 ```
 
-#### readFormData
-
-A wrapper for the h3 readMultipartFormData utility. Returns formdata from an event while handling 400 errors when the data cannot be obtained
-
-```ts
-const formdata = await readFormData(event)
-```
-
 ### mediaTypeCheck
 
 A media type (mime type) check for a file, passed with an array of acceptable media types.
@@ -298,7 +290,7 @@ Accepts wildcard denotion.
 Returns boolean, a 400 error if the file cannot be parsed, or throws a 500 error if the acceptable list cannot be parsed.
 
 ```ts
-const acceptableMediaTypes = ['application/pdf', 'application/zip', 'application/msword', 'image/*']
+const acceptableMediaTypes = ['application/example', 'image/*']
 const correctType = mediaTypeCheck(file, acceptableMediaTypes)
 ```
 
